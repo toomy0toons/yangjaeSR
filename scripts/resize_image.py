@@ -47,16 +47,16 @@ def main():
 
     #TRAIN
     # HR images
-    opt['input_folder'] = '/workspace/dacon/yangjaeSR/train/hr'
-    opt['save_folder'] = '/workspace/dacon/yangjaeSR-crop-all/train/hr'
+    opt['input_folder'] = 'data/yangjaeSR/train/hr'
+    opt['save_folder'] = 'data/processed/train/hr'
     opt['crop_size'] = 480
     opt['step'] = 240
     opt['thresh_size'] = 0
     extract_subimages(opt)
 
     # LR images
-    opt['input_folder'] = '/workspace/dacon/yangjaeSR/train/lr'
-    opt['save_folder'] = '/workspace/dacon/yangjaeSR-crop-all/train/lr'
+    opt['input_folder'] = 'data/yangjaeSR/train/lr'
+    opt['save_folder'] = 'data/processed/train/lr'
     opt['crop_size'] = 120
     opt['step'] = 60
     opt['thresh_size'] = 0

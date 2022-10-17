@@ -1,8 +1,8 @@
 import os
 import shutil
 
-source = '/workspace/dacon/HAT/results/HAT-L_SRx4_finetune_submission/visualization/yangjaeSR/'
-path = '/workspace/dacon/HAT/submissions/270k'
+source = 'results/HAT-L_Dacon_Submission/visualization/yangjaeSR'
+path = 'submissions/dacon_submission'
 
 
 for f in os.listdir(source):
