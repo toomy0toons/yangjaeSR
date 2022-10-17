@@ -108,6 +108,20 @@ AI 허브에서 데이터를 다운로드합니다.
 - [초해상화(Super Resolution 이미지)](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=77)
 - [노후 시설물 이미지](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=166)
 
+`scripts/convert_png.py` 를 이용하여 aihub data 를 2048 로 리사이징 한뒤, 잘라냅니다. 
+
+`data/aihub-list` 에서 사용된 데이터 목록을 볼 수 있습니다.
+
+```
+    # HR images
+    opt['input_folder'] = 'aihub-sr/노후 시설물 이미지'
+    opt['save_folder'] = 'aihub-processed/노후 시설물 이미지'
+    opt['crop_size'] = 480
+    opt['step'] = 360
+    opt['thresh_size'] = 0
+    extract_subimages(opt)
+
+```
 
 
 ## How To Test
